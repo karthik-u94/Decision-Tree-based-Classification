@@ -1,0 +1,37 @@
+
+
+INSTRUCTIONS FOR RUNNING:
+
+Environment: python
+version: 3.6.5
+
+Commands for running programs:
+
+Decision Tree:
+ 1. Training:
+	dtinduce <trainfile> <minfreq> <modelfile>
+
+ 2. Prediction: 
+	dtclassify <modelfile> <testfile> <predictions> 
+
+ 3. Testing: 
+	showconfmatrix <predictions>
+
+
+Random forest:
+
+1. Training:
+	rf <trainfile> <minfreq> 
+	
+	Creates 100 output files pred001-100	
+
+
+ 2. Prediction: 
+	rfmerge <testfile> <predictions> 
+
+	merges 100 output files to meak prediction
+
+ 3. Testing: 
+	showconfmatrix <predictions>
+
+
